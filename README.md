@@ -1,6 +1,6 @@
 # Introduction-to-Collections-Comparable-and-Comparator-Interface.
 
-Java Arrays
+► Java Arrays
 Normally, an array is a collection of similar type of elements which has contiguous memory location.
 
 Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.
@@ -19,8 +19,8 @@ Size Limit: We can store only the fixed size of elements in the array. It doesn'
 Types of Array in java
 There are two types of array.
 
-Single Dimensional Array
-Multidimensional Array
+• Single Dimensional Array
+• Multidimensional Array
 
 //Java Program to illustrate how to declare, instantiate, initialize  
 //and traverse the Java array.  
@@ -37,7 +37,7 @@ for(int i=0;i<a.length;i++)//length is the property of array
 System.out.println(a[i]);  
 }}
 
-Output:
+Output:► 
 
 10
 
@@ -51,7 +51,7 @@ Output:
 
 
 
-What is Java Collections Framework?
+► What is Java Collections Framework?
 
 Collections are like containers that group multiple items in a single unit. For example, a jar of chocolates, a list of names, etc.
 
@@ -84,19 +84,19 @@ Below class diagram shows Collections Framework hierarchy. For simplicity, I hav
 ![image](https://user-images.githubusercontent.com/91977965/136514845-d532f34f-6c49-4dd2-93c2-a5bf40e27a6d.png)
 
 
-Java provides two interfaces to sort objects using data members of the class: 
+► Java provides two interfaces to sort objects using data members of the class: 
  
 1.Comparable
 
 2.Comparator
 
 
-Using Comparable Interface
+•Using Comparable Interface
 
-A comparable object is capable of comparing itself with another object. The class itself must implements the java.lang.Comparable interface to compare its instances. 
+• A comparable object is capable of comparing itself with another object. The class itself must implements the java.lang.Comparable interface to compare its instances. 
 Consider a Movie class that has members like, rating, name, year. Suppose we wish to sort a list of Movies based on year of release. We can implement the Comparable interface with the Movie class, and we override the method compareTo() of Comparable interface.
 
-Java Comparable interface is used to order the objects of the user-defined class. This interface is found in java.lang package and contains only one method named compareTo(Object). It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only. For example, it may be rollno, name, age or anything else.
+• Java Comparable interface is used to order the objects of the user-defined class. This interface is found in java.lang package and contains only one method named compareTo(Object). It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only. For example, it may be rollno, name, age or anything else.
 
 compareTo(Object obj) method
 public int compareTo(Object obj): It is used to compare the current object with the specified object. It returns
@@ -106,12 +106,12 @@ negative integer, if the current object is less than the specified object.
 zero, if the current object is equal to the specified object.
 We can sort the elements of:
 
-String objects
+► String objects
 Wrapper class objects
 
 User-defined class objects
 
-Collections class
+► Collections class
 Collections class provides static methods for sorting the elements of collections. If collection elements are of Set or Map, we can use TreeSet or TreeMap. However, we cannot sort the elements of List. Collections class provides methods for sorting the elements of List type elements.
 
 import java.util.*;  
@@ -132,7 +132,7 @@ System.out.println(st.rollno+" "+st.name+" "+st.age);
 }  
 
 
-Output:
+Output:► 
   
 105 Jai 21
   
@@ -140,25 +140,25 @@ Output:
   
 106 Ajay 27
   
-Java Comparator interface
+• Java Comparator interface
 Java Comparator interface is used to order the objects of a user-defined class.
 
 This interface is found in java.util package and contains 2 methods compare(Object obj1,Object obj2) and equals(Object element).
 
 It provides multiple sorting sequences, i.e., you can sort the elements on the basis of any data member, for example, rollno, name, age or anything else.
 
-Methods of Java Comparator Interface
+• Methods of Java Comparator Interface
   
-Method	Description
+• Method	Description
 public int compare(Object obj1, Object obj2)----> It compares the first object with the second object.
   
 public boolean equals(Object obj)---->	It is used to compare the current object with the specified object.
   
 public boolean equals(Object obj)---->	It is used to compare the current object with the specified object.
   
-Collections class
+• • Collections class
 Collections class provides static methods for sorting the elements of a collection. If collection elements are of Set or Map, we can use TreeSet or TreeMap. However, we cannot sort the elements of List. Collections class provides methods for sorting the elements of List type elements also.
 
-Method of Collections class for sorting List elements
+• Method of Collections class for sorting List elements
 public void sort(List list, Comparator c): is used to sort the elements of List by the given Comparator.
   
